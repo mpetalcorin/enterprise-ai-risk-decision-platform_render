@@ -8,7 +8,7 @@ This repository includes a memory-conscious free-tier deployment profile (`rende
 
 See [`DEPLOY_RENDER.md`](DEPLOY_RENDER.md) for the free-tier limitations and deployment notes.
 
-
+<img width="1448" height="1086" alt="Enterprise AI Risk Decision Platform" src="https://github.com/user-attachments/assets/38a279d2-1d9d-47f7-8f5d-53584fb42b91" />
 A production-oriented, industry-neutral reference implementation for **governed machine-learning risk decisions**. It demonstrates the engineering path from a data-science proof of concept to a reusable AI service with model packaging, API serving, batch inference, explainability, audit logging, monitoring, drift checks, CI/CD, containers and Kubernetes.
 
 > **Portfolio / demonstration system:** the included dataset is entirely synthetic and the decision labels are simulated. This project is not a credit, fraud, AML, customer eligibility, or regulatory decision system and must not be used for real-world financial decisions without domain-specific validation, controls, legal review and model-risk governance.
