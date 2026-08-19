@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: enterprise-ai-risk-decision-platform
+    runtime: python
+    plan: free
+    region: frankfurt
+    buildCommand: pip install --no-cache-dir -r requirements-render.txt
+    startCommand: PYTHONPATH=src uvicorn risk_platform.api.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: demo
+      - key: LOG_LEVEL
+        value: INFO
+      - key: MODEL_BACKEND
+        value: xgboost
+      - key: MODEL_PATH
+        value: models/risk_model.joblib
+      - key: MODEL_VERSION
+        value: render-demo
+      - key: DECISION_THRESHOLD
+        value: "0.65"
+      - key: DATABASE_URL
+        value: sqlite:///./risk_audit.db
+      - key: REQUIRE_API_KEY
+        value: "false"
