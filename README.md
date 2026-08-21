@@ -279,9 +279,9 @@ This is a portfolio reference architecture, not a bank production system. Before
 
 The API decision is intentionally `approve` versus `manual_review`, not an irreversible adverse action. A human-governed review path is a safer demonstration of how an ML score can support rather than silently replace accountable decision-making.
 
-## Why this is useful as a Senior ML Scientist / MLOps portfolio project
+## Why this is useful 
 
-The repository explicitly demonstrates the skills usually hidden by notebook-only portfolios: packaging, interfaces, input contracts, testing, deployment, release automation, service health, observability, model/data drift, explainability, databases, audit trails, rollback-ready containerization and repeatable batch/online inference.
+The repository explicitly demonstrates the skills: packaging, interfaces, input contracts, testing, deployment, release automation, service health, observability, model/data drift, explainability, databases, audit trails, rollback-ready containerization and repeatable batch/online inference.
 
 ## Production-readiness evidence
 
